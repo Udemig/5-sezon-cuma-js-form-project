@@ -1,0 +1,95 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+textarea{
+    resize: none;
+}
+/* FORM */
+.formTitle{
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(32, 132, 175);
+}
+.formWrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#myForm {
+  width: 50%;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+}
+.formRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.textAreaWrapper {
+  align-items: flex-start;
+}
+.formRow label {
+  flex: 1;
+}
+.formRow input,
+.formRow textarea {
+  flex: 2;
+}
+.formRow input,
+.formRow textarea {
+  padding: 4px 8px;
+  font-size: 15px;
+  border: 2px solid gray;
+  border-radius: 4px;
+  caret-color: rgb(32, 132, 175);
+}
+.formRow input:focus,
+.formRow textarea:focus {
+  outline: none;
+  border: 2px solid rgb(32, 132, 175);
+}
+::placeholder {
+  color: rgb(175, 175, 175);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(175, 175, 175);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(175, 175, 175);
+}
+.formRow label{
+    color: rgb(55, 55, 55);
+}
+
+.formBtnWrapper{
+    display: flex;
+    justify-content: center;
+}
+.formBtn{
+    padding: 8px 30px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(32, 132, 175);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.formBtn:hover{
+    padding: 8px 50px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+}

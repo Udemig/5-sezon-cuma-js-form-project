@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Form Project With Real API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="formWrapper">
+      <form id="myForm">
+        <h3 class="formTitle">İLETİŞİM</h3>
+        <div class="formRow">
+          <label for="name">İsim</label>
+          <input type="text" id="name" placeholder="İsminizi yazın..." />
+        </div>
+        <div class="formRow">
+          <label for="surname">Soyisim</label>
+          <input type="text" id="surname" placeholder="Soyisminizi yazın..." />
+        </div>
+        <div class="formRow">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Emailinizi yazın..." />
+        </div>
+        <div class="formRow textAreaWrapper">
+          <label for="message">Mesaj</label>
+          <textarea
+            placeholder="Mesajınızı yazın..."
+            id="message"
+            cols="30"
+            rows="10"></textarea>
+        </div>
+        <div class="formBtnWrapper">
+          <button type="submit" class="formBtn">GÖNDER</button>
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
