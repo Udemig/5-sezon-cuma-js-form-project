@@ -93,3 +93,31 @@ textarea{
     padding: 8px 50px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 }
+
+.error{
+  color: orangered !important;
+}
+
+.sendingFormBtn{
+  background-color: gray;
+}
+
+.modalWrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.2);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContentWrapper{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 gray;
+}

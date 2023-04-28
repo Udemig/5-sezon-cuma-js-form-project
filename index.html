@@ -12,19 +12,19 @@
       <form id="myForm">
         <h3 class="formTitle">İLETİŞİM</h3>
         <div class="formRow">
-          <label for="name">İsim</label>
+          <label id="nameLabel" for="name">* İsim</label>
           <input type="text" id="name" placeholder="İsminizi yazın..." />
         </div>
         <div class="formRow">
-          <label for="surname">Soyisim</label>
+          <label id="surnameLabel" for="surname">* Soyisim</label>
           <input type="text" id="surname" placeholder="Soyisminizi yazın..." />
         </div>
         <div class="formRow">
-          <label for="email">Email</label>
+          <label id="emailLabel" for="email">* Email</label>
           <input type="email" id="email" placeholder="Emailinizi yazın..." />
         </div>
         <div class="formRow textAreaWrapper">
-          <label for="message">Mesaj</label>
+          <label id="messageLabel" for="message">* Mesaj</label>
           <textarea
             placeholder="Mesajınızı yazın..."
             id="message"
@@ -32,9 +32,14 @@
             rows="10"></textarea>
         </div>
         <div class="formBtnWrapper">
-          <button type="submit" class="formBtn">GÖNDER</button>
+          <button id="submitBtn" type="submit" class="formBtn">GÖNDER</button>
         </div>
       </form>
+    </div>
+    <div id="modal" class="modalWrapper">
+      <div class="modalContentWrapper">
+        <p id="modalMessage"></p>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
