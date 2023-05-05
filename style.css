@@ -21,7 +21,7 @@ textarea{
   justify-content: center;
   align-items: center;
 }
-#myForm {
+#myForm, #loginForm {
   width: 50%;
   padding: 20px;
   border-radius: 4px;
@@ -120,4 +120,46 @@ textarea{
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px 0 gray;
+}
+
+.headerWrapper{
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 0 10px 0 gray;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.headerWrapper a{
+  text-decoration: none;
+  color: #444;
+  transition: all 0.2s linear;
+}
+.headerWrapper a:hover{
+  color: rgb(32, 132, 175);
+}
+
+.listFormsWrapper{
+  display: none;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.cardWrapper{
+  width: 40%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 gray;
+  padding: 10px;
+}
+
+.cardRowWrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardTitle{
+  font-weight: bold;
 }
